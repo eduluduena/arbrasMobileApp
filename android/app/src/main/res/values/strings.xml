@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">arbras</string>
+    <string name="title_activity_main">arbras</string>
+    <string name="package_name">me.eduluduena.arbras</string>
+    <string name="custom_url_scheme">me.eduluduena.arbras</string>
+</resources>
