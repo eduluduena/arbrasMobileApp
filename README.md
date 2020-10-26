@@ -1,4 +1,6 @@
-# arbras
+# ARBRAS
+
+Aplicación mobile para mantener a los clientes con información al dia acerca de precios y productos, tambien otroga al cliente una vía de contacto con la empresa
 
 ## Project setup
 ```
