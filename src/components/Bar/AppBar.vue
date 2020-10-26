@@ -110,11 +110,10 @@
   </div>
 </template>
 <script>
-import axios from "axios";
-
 export default {
   name: "AppBar",
   data: () => ({ drawer: false, group: null }),
+
   methods: {
     homeClick() {
       this.$emit("on-home-click");
@@ -125,22 +124,10 @@ export default {
     contactoClick() {
       this.$emit("on-contacto-click");
     },
-    onClick() {
-      axios({
-        url: "/assets/Listadeprecio.pdf",
-
-        method: "GET",
-        responseType: "blob",
-      }).then((response) => {
-        var fileURL = window.URL.createObjectURL(new Blob([response.data]));
-        var fileLink = document.createElement("a");
-
-        fileLink.href = fileURL;
-        fileLink.setAttribute("download", "Lista de Precios.pdf");
-        document.body.appendChild(fileLink);
-
-        fileLink.click();
-      });
+    async onClick() {
+      window.open(
+        "http://c1740202.ferozo.com/asdasd/wp-content/uploads/2020/10/Lista-de-precio.pdf"
+      );
     },
   },
 };
